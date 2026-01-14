@@ -74,6 +74,6 @@ exemple: *vertical_layout_1.setAlignment(Qt.AlignTop)* -> Cette propriété n'es
 
 ### 5. Difficultés rencontrées et solutions
 
-Au départ, dans mais layout qui n'étaient pas des *scroll-views* quand il y avait trop de tâches ou trop de commentaires, la taille de chaque élément retrécissait au fûr et à mesur qu'on ajoutait des éléments à l'intérieur.
+Au départ, dans les layouts qui n'étaient pas des *scroll-views* quand il y avait trop de tâches ou trop de commentaires, la taille de chaque élément retrécissait au fûr et à mesur qu'on ajoutait des éléments à l'intérieur.
 
 Pour corriger ce probleme j'ai mis une *scroll-view* avec un layout à l'intérieur qui possède la propriété *max-height* à la valeur maximale. Nativement le layout prend la hauteur en fonction des éléments enfants. Ils s'affichaient par défaut au millieu de la *scroll-view*, c'est pourquoi j'ai appliqué une propriété directement dans le main.py car pas disponible dans PySide6-designer (pour les aligner en haut par défaut).
